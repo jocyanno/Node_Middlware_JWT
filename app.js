@@ -53,7 +53,7 @@ app.get("/dados-protegidos", autenticarToken, async (req, res) => {
 });
 
 // Rota protegida
-app.get("/sensors_leak_level", autenticarToken, async (req, res) => {
+app.get("/dados-protegidos", autenticarToken, async (req, res) => {
   try {
     // Conectar ao banco de dados
     const conexao = await mysql.createConnection(dbConfig);
